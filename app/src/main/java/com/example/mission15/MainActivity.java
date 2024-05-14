@@ -88,6 +88,9 @@ public class MainActivity extends AppCompatActivity {
         else if(!switch1.isChecked())
             count =2;
     }
+
+
+
     
         public void change(View view)
         {
