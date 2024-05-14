@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
     Switch switch1 ;
     RadioGroup rG ;
     RadioButton rB , rB2 ,rB3 , rB4 ;
-
     ImageView iV  ;
     int count=0 ;
     @Override
@@ -31,27 +30,22 @@ public class MainActivity extends AppCompatActivity {
         rB4 = findViewById(R.id.rB4);
         rG = findViewById(R.id.rG);
         iV = findViewById(R.id.iV);
-
-
     }
 
     public void blue(View view)
     {
         count  = 1 ;
         check(count , iV);
-
     }
     public void red(View view)
     {
         count = 2 ;
         check(count , iV);
-
     }
     public void yellow(View view)
     {
         count = 3;
         check(count , iV);
-
     }
     public void green(View view)
     {
@@ -88,20 +82,15 @@ public class MainActivity extends AppCompatActivity {
         else if(!switch1.isChecked())
             count =2;
     }
-
-
-
-    
         public void change(View view)
         {
             if(switch1.isChecked())
             {
                 check(count , iV);
-
-            }else if(!switch1.isChecked())
+            }
+            else if(!switch1.isChecked())
             {
                     check(count , iV);
-
             }
         }
 }
